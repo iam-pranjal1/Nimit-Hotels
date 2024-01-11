@@ -1,0 +1,41 @@
+/* Common styling for all screen sizes */
+.figure {
+    text-align: center; /* Center the content horizontally */
+}
+
+.profile img {
+    max-width: 100px; /* Set the maximum width of the image to 100px */
+    width: 100%; /* Ensure the image takes the full width of its container */
+    height: auto; /* Maintain the aspect ratio */
+    border-radius: 50%; /* Make the image a circle */
+    margin: 0 auto; /* Center the image within the container */
+    display: block; /* Remove default inline display */
+}
+
+/* Responsive styling for small screens (up to 576px) */
+@media screen and (max-width: 576px) {
+    .profile img {
+        max-width: 80px; /* Adjust the maximum width for small screens */
+    }
+}
+
+/* Responsive styling for medium screens (between 577px and 768px) */
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    .profile img {
+        max-width: 90px; /* Adjust the maximum width for medium screens */
+    }
+}
+
+/* Responsive styling for large screens (between 769px and 992px) */
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    .profile img {
+        max-width: 120px; /* Adjust the maximum width for large screens */
+    }
+}
+
+/* Responsive styling for extra-large screens (above 992px) */
+@media screen and (min-width: 993px) {
+    .profile img {
+        max-width: 150px; /* Adjust the maximum width for extra-large screens */
+    }
+}
